@@ -21,9 +21,30 @@ export function Hero() {
         </p>
 
         <div className="hero-links">
-          <a href="#projects">Projetos</a>
-          <a href="#skills">Skills</a>
-          <a href="#about">Sobre</a>
+          <a
+            href="https://github.com/Gab-Mel"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="GitHub"
+          >
+            GitHub
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/gabrielmeli-04b781205"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="LinkedIn"
+          >
+            LinkedIn
+          </a>
+
+          <a
+            href="mailto:gabrielmelo.void@gmail.com"
+            aria-label="Email"
+          >
+            Email
+          </a>
         </div>
       </div>
     </section>

@@ -26,6 +26,7 @@
   color: #888;
   max-width: 600px;
   margin-bottom: 2.5rem;
+  margin: 0 auto;
   line-height: 1.6;
 }
 
@@ -79,4 +80,27 @@
     rgba(0, 0, 0, 0.001) 90%,
     rgba(0, 0, 0, 0) 100%
   );
+}
+
+.hero-links {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;  /* centraliza horizontalmente */
+  margin-top: 2rem;
+}
+
+.hero-links a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #fff; /* assume que o fundo do hero é escuro */
+  padding: 0.5rem 1rem;
+  border: 2px solid #fff;
+  border-radius: 8px;
+  transition: all 0.2s;
+}
+
+.hero-links a:hover {
+  background-color: #fff;
+  color: #333;
+  transform: translateY(-2px);
 }
