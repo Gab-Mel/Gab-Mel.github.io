@@ -34,5 +34,14 @@ export const projects: Project[] = [
     linkGithub: "https://github.com/Gab-Mel/Bubble-Storm?tab=readme-ov-file",
     linkSite: "https://gab-mel.github.io/Bubble-Storm/",
     image: "/projects/bubble-storm.png"
+  },
+  {
+    title: "Cats are liquid!",
+    description:
+      "gerador de perguntas através de um texto qualquer, focado para crianças dislexicas.",
+    tech: ["React", "TypeScript", "NLP"],
+    linkGithub: "https://github.com/juanbelieni/cats-are-liquid",
+    image: "/projects/cats-are-liquid.png",
+    linkSite: null
   }
 ]
