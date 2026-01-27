@@ -10,8 +10,9 @@ function App() {
 
   return (
     <>
+      
+      <Header />
       <div>
-        <Header />
         <Hero />
         <Projects />
         <Skills />

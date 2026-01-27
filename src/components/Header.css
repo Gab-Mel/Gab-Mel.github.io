@@ -1,53 +1,69 @@
 .header {
-  position: absolute;
+  position: sticky;
   top: 0;
-  width: 100%;
-  padding: 1.5rem 2rem;
-  z-index: 10;
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(6px);
 }
 
-nav {
-  max-width: 900px;
+.header nav {
+  max-width: 960px;
   margin: 0 auto;
+  padding: 1.25rem 2rem;
+
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
 }
 
 .brand {
+  font-size: 0.95rem;
   font-weight: 600;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.15em;
   text-decoration: none;
   color: white;
 }
 
 .nav-links {
   display: flex;
-  gap: 1.5rem;
+  gap: 2rem;
 }
 
 .nav-links a {
-  text-decoration: none;
-  color: #aaa;
-  font-size: 0.9rem;
   position: relative;
-}
-
-.nav-links a::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -4px;
-  width: 0;
-  height: 1px;
-  background: white;
-  transition: width 0.2s ease;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #bbb;
+  text-decoration: none;
+  padding: 0.25rem 0;
 }
 
 .nav-links a:hover {
   color: white;
 }
 
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0;
+  height: 1px;
+  background: white;
+  transition: width 0.2s ease;
+}
+
 .nav-links a:hover::after {
   width: 100%;
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+  .header nav {
+    padding: 1rem 1.25rem;
+  }
+
+  .nav-links {
+    gap: 1.25rem;
+  }
 }
