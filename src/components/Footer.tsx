@@ -14,9 +14,17 @@ export function Footer() {
           >
             GitHub
           </a>
+          <a
+            href="https://www.linkedin.com/in/gabrielmeli-04b781205"
+            target="_blank"
+            rel="noreferrer"
+          >
+            LinkedIn
+          </a>
           <a href="mailto:gabrielmelo.void@gmail.com">
             Email
           </a>
+          
         </div>
       </div>
     </footer>
