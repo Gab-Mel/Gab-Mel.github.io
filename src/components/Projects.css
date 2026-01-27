@@ -1,0 +1,66 @@
+.projects {
+  padding: 4rem 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.projects h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.projects-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-item {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 1.5rem 0;
+  text-decoration: none;
+  color: white;
+  border-top: 1px solid #222;
+}
+
+.project-item:last-child {
+  border-bottom: 1px solid #222;
+}
+
+.project-item h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.project-item p {
+  color: #aaa;
+  margin-bottom: 0.75rem;
+  max-width: 600px;
+}
+
+.project-item ul {
+  display: flex;
+  gap: 0.75rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0.85rem;
+  color: #777;
+}
+
+.project-item li::before {
+  content: "#";
+  margin-right: 2px;
+}
+
+.arrow {
+  font-size: 1.25rem;
+  opacity: 0.6;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.project-item:hover .arrow {
+  transform: translate(4px, -4px);
+  opacity: 1;
+}
