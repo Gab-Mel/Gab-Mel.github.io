@@ -1,0 +1,33 @@
+.skills {
+  padding: 4rem 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.skills h2 {
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+}
+
+.skill-group h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+}
+
+.skill-group ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skill-group li {
+  color: #aaa;
+  margin-bottom: 0.4rem;
+  font-size: 0.95rem;
+}
