@@ -27,12 +27,12 @@ export const projects: Project[] = [
     image: "/projects/film-network.png"
   },
   {
-    title: "Visualização Estatística",
+    title: "Bubble Storm",
     description:
-      "Exploração de dados estatísticos com foco em clareza e storytelling.",
-    tech: ["React", "DataViz"],
-    linkGithub: "https://github.com/Gab-Mel",
-    linkSite: "https://gab-mel.github.io/statistical-visualization/",
-    image: "/projects/stats-viz.png"
+      "Mapa iterativo para visualizar e localizar ocorrências registradas pela COR e algumas estatísticas adicionais.",
+    tech: ["HTML", "COR", "AEDV"],
+    linkGithub: "https://github.com/Gab-Mel/Bubble-Storm?tab=readme-ov-file",
+    linkSite: "https://gab-mel.github.io/Bubble-Storm/",
+    image: "/projects/bubble-storm.png"
   }
 ]

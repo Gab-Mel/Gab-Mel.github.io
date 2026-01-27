@@ -5,7 +5,7 @@ export function Header() {
     <header className="header">
       <nav>
         <a href="#top" className="brand">
-          GM
+          GabMel
         </a>
 
         <div className="nav-links">

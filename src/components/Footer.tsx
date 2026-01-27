@@ -4,7 +4,7 @@ export function Footer() {
   return (
     <footer className="footer">
       <div className="footer-content">
-        <span>© {new Date().getFullYear()} Gabriel Melo</span>
+        <span>© {new Date().getFullYear()} Gabriel de Melo Lima</span>
 
         <div className="footer-links">
           <a

@@ -8,7 +8,7 @@ export function Hero() {
           <img src="/me.jpg" alt="Minha foto" />
         </div>
 
-        <h1>Gabriel Melo</h1>
+        <h1>Gabriel de Melo Lima</h1>
 
         <p className="hero-subtitle">
           Desenvolvedor front-end focado em visualização de dados,
