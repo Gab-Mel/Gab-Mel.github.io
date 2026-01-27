@@ -6,7 +6,7 @@
 
 .projects h2 {
   font-size: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
 }
 
 .projects-list {
@@ -15,31 +15,40 @@
 }
 
 .project-item {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 220px 1fr auto;
   gap: 2rem;
   padding: 1.5rem 0;
   text-decoration: none;
   color: white;
   border-top: 1px solid #222;
+  align-items: center;
 }
 
 .project-item:last-child {
   border-bottom: 1px solid #222;
 }
 
-.project-item h3 {
+.project-image {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  object-fit: cover;
+  background: #111;
+}
+
+.project-info h3 {
   font-size: 1.3rem;
   margin-bottom: 0.5rem;
 }
 
-.project-item p {
+.project-info p {
   color: #aaa;
   margin-bottom: 0.75rem;
-  max-width: 600px;
+  max-width: 500px;
 }
 
-.project-item ul {
+.project-info ul {
   display: flex;
   gap: 0.75rem;
   list-style: none;
@@ -49,18 +58,49 @@
   color: #777;
 }
 
-.project-item li::before {
+.project-info li::before {
   content: "#";
   margin-right: 2px;
 }
 
 .arrow {
   font-size: 1.25rem;
-  opacity: 0.6;
+  opacity: 0.5;
   transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
 .project-item:hover .arrow {
   transform: translate(4px, -4px);
   opacity: 1;
+}
+
+.project-links {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+
+.project-links a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #0aa;
+  transition: color 0.2s;
+}
+
+.project-links a:hover {
+  color: #08f;
+}
+
+
+/* Mobile */
+@media (max-width: 700px) {
+  .project-item {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .arrow {
+    display: none;
+  }
 }

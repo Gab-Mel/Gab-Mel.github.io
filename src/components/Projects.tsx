@@ -7,27 +7,34 @@ export function Projects() {
       <h2>Projetos</h2>
 
       <div className="projects-list">
-        {projects.map((project) => (
-          <a
-            key={project.title}
-            href={project.link}
-            target="_blank"
-            rel="noreferrer"
-            className="project-item"
-          >
+        {projects.map(project => (
+          <div key={project.title} className="project-item">
             <div>
+              <img src={project.image} alt={project.title} className="project-image" />
+              <div className="project-links">
+                  <a href={project.linkGithub} target="_blank" rel="noreferrer">
+                    GitHub
+                  </a>
+                  {project.linkSite && (
+                    <a href={project.linkSite} target="_blank" rel="noreferrer">
+                      Site
+                    </a>
+                  )}
+              </div>
+            </div>
+
+            <div className="project-info">
               <h3>{project.title}</h3>
               <p>{project.description}</p>
-
               <ul>
                 {project.tech.map(t => (
                   <li key={t}>{t}</li>
                 ))}
               </ul>
-            </div>
 
-            <span className="arrow">↗</span>
-          </a>
+              
+            </div>
+          </div>
         ))}
       </div>
     </section>

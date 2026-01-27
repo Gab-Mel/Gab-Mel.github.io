@@ -4,9 +4,11 @@ export function Hero() {
   return (
     <section className="hero">
       <div className="hero-content">
-        <h1>
-          Gabriel Melo
-        </h1>
+        <div className="hero-image">
+          <img src="/me.jpg" alt="Minha foto" />
+        </div>
+
+        <h1>Gabriel Melo</h1>
 
         <p className="hero-subtitle">
           Desenvolvedor front-end focado em visualização de dados,
@@ -14,22 +16,17 @@ export function Hero() {
         </p>
 
         <p className="hero-description">
-          Trabalho com React, D3, TypeScript e web moderna para transformar
+          Trabalho com React, TypeScript e D3 para transformar
           dados complexos em experiências compreensíveis.
         </p>
 
         <div className="hero-links">
           <a href="#projects">Projetos</a>
-          <a
-            href="https://github.com/Gab-Mel"
-            target="_blank"
-            rel="noreferrer"
-          >
-            GitHub
-          </a>
-          <a href="#contact">Contato</a>
+          <a href="#skills">Skills</a>
+          <a href="#about">Sobre</a>
         </div>
       </div>
     </section>
+
   )
 }
