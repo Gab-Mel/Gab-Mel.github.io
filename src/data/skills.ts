@@ -15,13 +15,43 @@ export const skillGroups: SkillGroup[] = [
     ]
   },
   {
+    title: "Backend",
+    skills: [
+      "Node.js",
+      "Python e C++",
+      "Rest APIs",
+      "SQL, SQLite e MySQL",
+      "NoSQL (MongoDB)"
+    ]
+  },
+  {
     title: "Visualização de Dados",
     skills: [
       "D3.js",
       "Mapas Interativos",
-      "SVG",
-      "Canvas",
+      "SVG e Canvas",
+      "Ggplot2, Matplotlib e Seaborn",
       "Scrollytelling"
+    ]
+  },
+  {
+    title: "Ferramentas",
+    skills: [
+      "VS Code",
+      "Excel",
+      "Jupyter Notebooks",
+      "Power BI",
+      "RStudio"
+    ]
+  },
+  {
+    title: "Metodologias",
+    skills: [
+      "Scrum",
+      "Kanban",
+      "XP",
+      "UML",
+      "Code Review"
     ]
   },
   {
@@ -29,8 +59,8 @@ export const skillGroups: SkillGroup[] = [
     skills: [
       "Git",
       "GitHub Pages",
-      "Python",
-      "Estatística",
+      "Machine Learning Básico",
+      "Foma",
       "LaTeX"
     ]
   }
